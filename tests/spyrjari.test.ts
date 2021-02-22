@@ -3,7 +3,7 @@ import { hasProperty } from '../src/index';
 describe('Spyrjari: hasProperty', () => {
   test('Throws error on missing argument', () => {
     expect(() => {
-      hasProperty(undefined, undefined);
+      hasProperty(undefined as any, undefined as any);
     }).toThrow('Missing argument: expects an object and string property key');
   });
 
